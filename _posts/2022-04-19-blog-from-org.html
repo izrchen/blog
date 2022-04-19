@@ -1,0 +1,134 @@
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgfb8377e">1. 网页托管：Github Pages</a>
+<ul>
+<li><a href="#orgc516ab0">1.1. 创建仓库</a></li>
+<li><a href="#org3589de9">1.2. 开启Github Pages</a></li>
+</ul>
+</li>
+<li><a href="#org80758cc">2. Static Site Generator：jekyll</a>
+<ul>
+<li><a href="#org7176e71">2.1. 站点配置</a></li>
+<li><a href="#orga8f4e55">2.2. 参考网站</a></li>
+</ul>
+</li>
+<li><a href="#org089b481">3. 笔记导出：org-publish</a>
+<ul>
+<li><a href="#orga5e0c49">3.1. 导出配置</a>
+<ul>
+<li><a href="#org580dda0">3.1.1. 配置解读</a></li>
+</ul>
+</li>
+<li><a href="#org0814fcd">3.2. 导出命令</a></li>
+<li><a href="#org975fde3">3.3. 注意事项</a></li>
+</ul>
+</li>
+<li><a href="#orgfa5552c">4. 相关教程</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfb8377e" class="outline-2">
+<h2 id="orgfb8377e"><span class="section-number-2">1</span> 网页托管：Github Pages</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgc516ab0" class="outline-3">
+<h3 id="orgc516ab0"><span class="section-number-3">1.1</span> 创建仓库</h3>
+</div>
+<div id="outline-container-org3589de9" class="outline-3">
+<h3 id="org3589de9"><span class="section-number-3">1.2</span> 开启Github Pages</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>注意GitHub Pages中Source的Branch为gh-pages</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org80758cc" class="outline-2">
+<h2 id="org80758cc"><span class="section-number-2">2</span> Static Site Generator：jekyll</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org7176e71" class="outline-3">
+<h3 id="org7176e71"><span class="section-number-3">2.1</span> 站点配置</h3>
+</div>
+<div id="outline-container-orga8f4e55" class="outline-3">
+<h3 id="orga8f4e55"><span class="section-number-3">2.2</span> 参考网站</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li><a href="https://guidao.github.io/index.html">一个懒惰的程序员</a></li>
+<li><a href="https://lepisma.xyz/">(car nil)</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org089b481" class="outline-2">
+<h2 id="org089b481"><span class="section-number-2">3</span> 笔记导出：org-publish</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orga5e0c49" class="outline-3">
+<h3 id="orga5e0c49"><span class="section-number-3">3.1</span> 导出配置</h3>
+<div class="outline-text-3" id="text-3-1">
+<pre class="example">
+(setq
+      ;; nil as default to avoid leaking sensitive info unintentionally,
+      ;; overwritten in per-project settings bellow
+      org-html-postamble nil
+      org-publish-project-alist
+      '(
+	("blog-attachments"
+	 :base-directory "/mnt/c/myText/local-blog"
+	 :base-extension "png\\|jpg"
+	 :recursive t
+	 :publishing-directory "/mnt/c/myText/blog/images"
+	 :publishing-function org-publish-attachment)
+
+	("blog"
+	 :base-directory "/mnt/c/myText/local-blog"  
+	 :base-extension "org"
+	 :recursive t
+	 :publishing-directory "/mnt/c/myText/blog/_posts"
+	 :publishing-function org-html-publish-to-html
+	 :body-only t ;; Only export section between &lt;body&gt; &lt;/body&gt;
+	 :html-link-use-abs-url t
+	 ))
+
+      org-export-allow-bind-keywords t  ; I like "#+BIND:var value"
+)
+</pre>
+</div>
+<div id="outline-container-org580dda0" class="outline-4">
+<h4 id="org580dda0"><span class="section-number-4">3.1.1</span> 配置解读</h4>
+</div>
+</div>
+<div id="outline-container-org0814fcd" class="outline-3">
+<h3 id="org0814fcd"><span class="section-number-3">3.2</span> 导出命令</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+在emacs里=M-x org-publish RET blog RET=
+</p>
+</div>
+</div>
+
+<div id="outline-container-org975fde3" class="outline-3">
+<h3 id="org975fde3"><span class="section-number-3">3.3</span> 注意事项</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>org文件命名格式：=yyyy:mm:dd-filename.org=</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfa5552c" class="outline-2">
+<h2 id="orgfa5552c"><span class="section-number-2">4</span> 相关教程</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li><a href="https://www.dazhuanlan.com/innerunniverse/topics/1399917">如何让org · 大专栏</a></li>
+<li><a href="https://orgmode.org/manual/Publishing-options.html">Publishing options (The Org Manual)</a></li>
+<li><a href="https://emacs-china.org/t/org-mode-ox-publish/13869">基于 org-mode 项目发布功能（ox-publish）的静态站点生成框架 - Org-mode - Emacs China</a></li>
+<li><a href="https://lgfang.github.io/computer/2015/11/02/org-mode-github-pages">用 Org-Mode 与 GithubPages 搭建个人博客</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/51240503">Github Pages + jekyll 全面介绍极简搭建个人网站和博客 - 知乎</a></li>
+</ul>
+</div>
+</div>

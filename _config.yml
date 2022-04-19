@@ -1,5 +1,5 @@
 # Site settings 配置站点
-title: 'Nathan's Blog'
+title: 'Nathan’s Blog'
 description: 'nice to meet you'
 keyword: 'java, python'
 url: 'izrchen.github.io' # your host
@@ -24,9 +24,9 @@ footer:
   since: 2022
 
 # Author 配置博主信息
-author: '陈致然'
+author: 'Nathan'
 nickname: '皮皮'
-bio: '---'
+bio: '大道至简'
 avatar: '/assets/img/profile.png'
 
 # Search
@@ -59,7 +59,7 @@ sns:
   weibo: '//weibo.com/lovecolcol'
   juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
   instagram: '//www.instagram.com/steveliaocn'
-  github: '//github.com/kaeyleo'
+  github: '//github.com/izrchen'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar

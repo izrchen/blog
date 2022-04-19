@@ -1,10 +1,9 @@
 ---
 layout: post
 title: 使用org发博客
-date: 2022-04-19
 tagline:
-categories: computer
-tags: emacs
+categories: ${2:computer}
+tags: [${3:emacs}]
 ---
 <div id="outline-container-orgfb8377e" class="outline-2">
 <h2 id="orgfb8377e"><span class="section-number-2">1</span> 网页托管：Github Pages</h2>

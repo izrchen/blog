@@ -6,8 +6,8 @@ author: Nathan
 tags: job
 ---
 
-<div id="outline-container-orgcee823a" class="outline-2">
-<h2 id="orgcee823a"><span class="section-number-2">1</span> 概念</h2>
+<div id="outline-container-org83e16ba" class="outline-2">
+<h2 id="org83e16ba"><span class="section-number-2">1</span> 概念</h2>
 <div class="outline-text-2" id="text-1">
 </div>
 <div id="outline-container-org84adc54" class="outline-3">
@@ -130,9 +130,12 @@ tags: job
 </tr>
 </tbody>
 </table>
-<p>
-<a href="./assets/%E5%85%83%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86.png">元数据管理</a>
+
+<div class="figure">
+<p><img src="./assets/元数据管理例子.png" alt="元数据管理例子.png" />
 </p>
+<p><span class="figure-number">Figure 1: </span>元数据管理</p>
+</div>
 </div>
 
 <ol class="org-ol">
@@ -142,12 +145,11 @@ tags: job
 <li><a id="org2012ede"></a>管理元数据<br /></li>
 </ol>
 </div>
-<div id="outline-container-org1c37afa" class="outline-4">
-<h4 id="org1c37afa"><span class="section-number-4">1.2.3</span> 参考数据 Reference Data</h4>
+<div id="outline-container-orge484d5e" class="outline-4">
+<h4 id="orge484d5e"><span class="section-number-4">1.2.3</span> 引用数据（参考数据） Reference Data</h4>
 <div class="outline-text-4" id="text-1-2-3">
 <ul class="org-ul">
 <li>元数据的可能取值范围</li>
-<li>类比：数据字典，码表</li>
 </ul>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -312,7 +314,7 @@ tags: job
 <div class="outline-text-4" id="text-1-3-5">
 </div>
 <ol class="org-ol">
-<li><a id="org3016a19"></a>数据治理<br />
+<li><a id="orgc2d5095"></a>数据治理<br />
 <div class="outline-text-5" id="text-1-3-5-1">
 <ul class="org-ul">
 <li>保障数据管理活动顺利开展的控制活动</li>
@@ -349,8 +351,8 @@ tags: job
 </ol>
 </div>
 </div>
-<div id="outline-container-orgb723eb5" class="outline-3">
-<h3 id="orgb723eb5"><span class="section-number-3">1.4</span> 数据治理</h3>
+<div id="outline-container-org3016a19" class="outline-3">
+<h3 id="org3016a19"><span class="section-number-3">1.4</span> 数据治理</h3>
 <div class="outline-text-3" id="text-1-4">
 </div>
 <div id="outline-container-org59ef6e2" class="outline-4">
@@ -408,8 +410,8 @@ tags: job
 </ol>
 </div>
 
-<div id="outline-container-org9f75558" class="outline-4">
-<h4 id="org9f75558"><span class="section-number-4">1.4.3</span> 步骤</h4>
+<div id="outline-container-org0e0985c" class="outline-4">
+<h4 id="org0e0985c"><span class="section-number-4">1.4.3</span> 步骤</h4>
 <div class="outline-text-4" id="text-1-4-3">
 <ul class="org-ul">
 <li>找症状，明确目标
@@ -448,8 +450,8 @@ tags: job
 </ul>
 </div>
 </div>
-<div id="outline-container-org3f7b3df" class="outline-4">
-<h4 id="org3f7b3df"><span class="section-number-4">2.1.2</span> 政务大数据中心资源池建设</h4>
+<div id="outline-container-orgf3b4d04" class="outline-4">
+<h4 id="orgf3b4d04"><span class="section-number-4">2.1.2</span> 政务大数据中心资源池建设</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <ul class="org-ul">
 <li><a href="https://blog.csdn.net/hgstclyh/article/details/115658615">(18条消息) 政务数据里的基础库、主题库、专题库<sub>Leo笑的博客</sub>-CSDN博客<sub>主题库</sub></a></li>
@@ -542,8 +544,8 @@ tags: job
 <h3 id="orgadf8335"><span class="section-number-3">2.2</span> 工作内容</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-orgda3306d" class="outline-4">
-<h4 id="orgda3306d"><span class="section-number-4">2.2.1</span> 政务大数据中心资源池建设</h4>
+<div id="outline-container-org3f7b3df" class="outline-4">
+<h4 id="org3f7b3df"><span class="section-number-4">2.2.1</span> 政务大数据中心资源池建设</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <ul class="org-ul">
 <li>数据调研</li>
@@ -656,7 +658,7 @@ tags: job
 <div class="outline-text-4" id="text-2-2-4">
 </div>
 <ol class="org-ol">
-<li><a id="org39a04d2"></a>元数据管理<br /></li>
+<li><a id="orgfdfa0b6"></a>元数据管理<br /></li>
 <li><a id="orge4e374c"></a>数据元管理<br /></li>
 <li><a id="orgda7bfab"></a>数据质量管理<br /></li>
 <li><a id="org8d8d4f8"></a>数据架构设计<br /></li>
@@ -781,7 +783,7 @@ tags: job
 </li>
 <li><a id="orgbe6773e"></a>数据分析<br /></li>
 <li><a id="org2589fab"></a>数据挖掘<br /></li>
-<li><a id="org11ba474"></a>元数据管理<br />
+<li><a id="org39a04d2"></a>元数据管理<br />
 <div class="outline-text-6" id="text-3-1-2-6-4">
 <ul class="org-ul">
 <li>元数据：解释性数据，用于记录数据仓库中模型的定义，各层级间的映射关系；监控数据仓库的数据状态及ETL的任务运行状态</li>
@@ -946,7 +948,7 @@ tags: job
 </ul>
 </div>
 <ol class="org-ol">
-<li><a id="orgb5037f9"></a>概念<br />
+<li><a id="orgcee823a"></a>概念<br />
 <div class="outline-text-6" id="text-3-1-4-2-1">
 <ul class="org-ul">
 <li>数据立方体</li>
@@ -1214,8 +1216,8 @@ tags: job
 <h3 id="orge4eb3c0"><span class="section-number-3">3.2</span> 数据库</h3>
 <div class="outline-text-3" id="text-3-2">
 </div>
-<div id="outline-container-orgfefa231" class="outline-4">
-<h4 id="orgfefa231"><span class="section-number-4">3.2.1</span> 范式</h4>
+<div id="outline-container-org6c8ec42" class="outline-4">
+<h4 id="org6c8ec42"><span class="section-number-4">3.2.1</span> 范式</h4>
 <div class="outline-text-4" id="text-3-2-1">
 <ul class="org-ul">
 <li><a href="https://blog.csdn.net/Dove_Knowledge/article/details/71434960">(18条消息) 数据库-第一范式、第二范式、第三范式、BC范式、第四范式简析<sub>Yes</sub><sub>JiangShuai的博客</sub>-CSDN博客<sub>bc范式</sub></a></li>
@@ -1235,7 +1237,7 @@ tags: job
 <div class="outline-text-4" id="text-3-2-2">
 </div>
 <ol class="org-ol">
-<li><a id="org85368e5"></a>步骤<br />
+<li><a id="org9f75558"></a>步骤<br />
 <div class="outline-text-5" id="text-3-2-2-1">
 <ul class="org-ul">
 <li><a href="https://blog.csdn.net/Eason_oracle/article/details/52667628">数据库建模三步骤：概念模型-&gt;逻辑模型-&gt;物理模型</a></li>
@@ -1261,7 +1263,7 @@ tags: job
 <div class="outline-text-4" id="text-3-2-3">
 </div>
 <ol class="org-ol">
-<li><a id="org0e0d43a"></a>范式<br />
+<li><a id="orgfefa231"></a>范式<br />
 <div class="outline-text-5" id="text-3-2-3-1">
 <ul class="org-ul">
 <li><a href="https://blog.csdn.net/Dream_angel_Z/article/details/45175621">(18条消息) 数据库（第一范式，第二范式，第三范式）<sub>拾毅者的博客</sub>-CSDN博客<sub>范式</sub></a></li>

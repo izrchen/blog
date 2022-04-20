@@ -39,9 +39,16 @@ tags: emacs
 </div>
 </div>
 </div>
-<div id="outline-container-org089b481" class="outline-2">
-<h2 id="org089b481"><span class="section-number-2">3</span> 笔记导出：org-publish</h2>
+<div id="outline-container-org776eda4" class="outline-2">
+<h2 id="org776eda4"><span class="section-number-2">3</span> 使用org-mode编辑博客</h2>
 <div class="outline-text-2" id="text-3">
+<p>
+笔记导出：org-publish
+</p>
+<ul class="org-ul">
+<li><a href="https://victor72.github.io/blog/2016/06/16/with-org-mode-setup-up-personal-blog/">使用 Emacs Org-Mode 写博客 - 日知录</a></li>
+<li><a href="https://lgfang.github.io/computer/2015/11/02/org-mode-github-pages">用 Org-Mode 与 GithubPages 搭建个人博客</a></li>
+</ul>
 </div>
 <div id="outline-container-orga5e0c49" class="outline-3">
 <h3 id="orga5e0c49"><span class="section-number-3">3.1</span> 导出配置</h3>
@@ -96,9 +103,49 @@ tags: emacs
 </div>
 </div>
 </div>
-<div id="outline-container-orgfa5552c" class="outline-2">
-<h2 id="orgfa5552c"><span class="section-number-2">4</span> 相关教程</h2>
+<div id="outline-container-orgf61404c" class="outline-2">
+<h2 id="orgf61404c"><span class="section-number-2">4</span> 网站主题修改</h2>
 <div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org70a704f" class="outline-3">
+<h3 id="org70a704f"><span class="section-number-3">4.1</span> 参考博客</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li><a href="http://wu.run/">吴润写字的地方</a></li>
+<li><a href="https://blog.arvinx.com/2017/modify-the-theme/">博客建站记录（3）| 主题配置与修改（上） - 空谷札记 | ArvinX's Blog</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf851cca" class="outline-2">
+<h2 id="orgf851cca"><span class="section-number-2">5</span> yaml font matter自动生成</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgcf388bc" class="outline-3">
+<h3 id="orgcf388bc"><span class="section-number-3">5.1</span> 自动生成文字</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li><a href="http://www.fidding.me/article/18">emacs yasnippet自定义模版配置与使用-洪加煌博客</a></li>
+<li><a href="http://www.manongjc.com/article/113438.html">Emacs yasnippet - 码农教程</a></li>
+<li><a href="https://www.codeleading.com/article/63523514631/">Emacs安装配置yasnippet - 代码先锋网</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgedc17ad" class="outline-3">
+<h3 id="orgedc17ad"><span class="section-number-3">5.2</span> org-jekyll-mode</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li><a href="https://github.com/jsuper/org-jekyll-mode">jsuper/org-jekyll-mode: Emacs extensions for writing Jekyll post with org-mode</a></li>
+<li><a href="https://orgmode.org/worg/org-tutorials/org-jekyll.html">Using org to Blog with Jekyll</a></li>
+<li><a href="https://jsuper.github.io/emacs/using-org-mode-to-write-jekyll-post.html#sec-2-2">使用org-mode撰写jekyll博客</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfa5552c" class="outline-2">
+<h2 id="orgfa5552c"><span class="section-number-2">6</span> 相关教程</h2>
+<div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li><a href="https://www.dazhuanlan.com/innerunniverse/topics/1399917">如何让org · 大专栏</a></li>
 <li><a href="https://orgmode.org/manual/Publishing-options.html">Publishing options (The Org Manual)</a></li>

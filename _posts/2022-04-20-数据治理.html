@@ -6,8 +6,8 @@ author: Nathan
 tags: job
 ---
 
-<div id="outline-container-orgbcd9245" class="outline-2">
-<h2 id="orgbcd9245"><span class="section-number-2">1</span> 概念</h2>
+<div id="outline-container-orgbd10e3e" class="outline-2">
+<h2 id="orgbd10e3e"><span class="section-number-2">1</span> 概念</h2>
 <div class="outline-text-2" id="text-1">
 </div>
 <div id="outline-container-org84adc54" class="outline-3">
@@ -98,6 +98,11 @@ tags: job
 <ul class="org-ul">
 <li>定义：对数据（数值）的描述，数据管理的所有活动中都有元数据</li>
 <li>核心目的：降低人与数据之间的沟通成本。描述越准确，数据使用成本越低。</li>
+<li>例子：
+<ul class="org-ul">
+<li>元数据：存储着关于数据的数据信息，如书的封面，内页，背面，目录，页码</li>
+<li>数据：正文</li>
+</ul></li>
 </ul>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -130,15 +135,47 @@ tags: job
 </tr>
 </tbody>
 </table>
-<p>
-<a href="../assets/note_img/%E5%85%83%E6%95%B0%E6%8D%AE%E4%BE%8B%E5%AD%90.png">元数据例子</a>
+
+<div class="figure">
+<p><img src="../assets/note_img/%E5%85%83%E6%95%B0%E6%8D%AE%E4%BE%8B%E5%AD%90.png" alt="%E5%85%83%E6%95%B0%E6%8D%AE%E4%BE%8B%E5%AD%90.png" />
 </p>
+<p><span class="figure-number">Figure 1: </span>元数据管理</p>
+</div>
 </div>
 <ol class="org-ol">
 <li><a id="orgbb127a5"></a>技术元数据<br /></li>
 <li><a id="org32dc7b0"></a>业务元数据<br /></li>
 <li><a id="orgc07137a"></a>操作元数据<br /></li>
 <li><a id="org2012ede"></a>管理元数据<br /></li>
+<li><a id="org5eecc91"></a>元数据的功能<br />
+<div class="outline-text-5" id="text-1-2-2-5">
+<ul class="org-ul">
+<li>描述数据仓库中的数据</li>
+<li>定义输入和输出数据仓库的数据</li>
+<li>给出数据抽取工作的时间安排</li>
+<li>检测数据一致性要求的执行情况</li>
+<li>衡量数据质量</li>
+</ul>
+</div>
+</li>
+<li><a id="org934d8d7"></a>基于应用的元数据<br />
+<div class="outline-text-5" id="text-1-2-2-6">
+<ul class="org-ul">
+<li>数据结构：数据集的名称、关系、字段、约束等；</li>
+<li>数据部署：数据集的物理位置；</li>
+<li>数据流：数据集之间的流程依赖关系（非参照依赖），包括数据集到另一个数据集的规则；</li>
+<li>质量度量：数据集上可以计算的度量；</li>
+<li>度量逻辑关系：数据集度量之间的逻辑运算关系；</li>
+<li>ETL过程：过程运行的顺序，并行、串行；</li>
+<li>数据集快照：一个时间点上，数据在所有数据集上的分布情况；</li>
+<li><del>星型模式元数据：事实表、维度、属性、层次等；</del></li>
+<li>报表语义层：报表指标的规则、过滤条件物理名称和业务名称的对应；</li>
+<li><del>数据访问日志：哪些数据何时被何人访问；</del></li>
+<li><del>质量稽核日志：何时、何度量被稽核，其结果；</del></li>
+<li><del>数据装载日志：哪些数据何时被何人装载</del></li>
+</ul>
+</div>
+</li>
 </ol>
 </div>
 <div id="outline-container-org1c37afa" class="outline-4">
@@ -146,8 +183,9 @@ tags: job
 <div class="outline-text-4" id="text-1-2-3">
 <ul class="org-ul">
 <li>元数据的可能取值范围</li>
-<li>类比：数据字典，码表</li>
-</ul>
+<li><p>
+类比：数据字典，码表
+</p>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -174,7 +212,8 @@ tags: job
 <td class="org-left">100+个国家</td>
 </tr>
 </tbody>
-</table>
+</table></li>
+</ul>
 </div>
 </div>
 <div id="outline-container-org9773398" class="outline-4">
@@ -195,20 +234,162 @@ tags: job
 <h4 id="orgf7def90"><span class="section-number-4">1.2.5</span> 分析类数据</h4>
 <div class="outline-text-4" id="text-1-2-5">
 <ul class="org-ul">
-<li>度量</li>
-<li>维度</li>
-<li>指标</li>
+<li><a href="https://juejin.cn/post/6844904064648478727">相关概念</a></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orgeda7c49"></a>业务过程<br />
+<div class="outline-text-5" id="text-1-2-5-1">
+<ul class="org-ul">
+<li>定义：一个不可拆分的行为事件。例如下单、支付、退款都是业务过程。</li>
+</ul>
+</div>
+</li>
+<li><a id="org4059428"></a>度量（数值）<br />
+<div class="outline-text-5" id="text-1-2-5-2">
+<ul class="org-ul">
+<li>提供用户感兴趣的聚合数据</li>
+<li>中国男人（维度）身高（度量）</li>
+<li>支付（事件）金额（度量）</li>
+</ul>
+</div>
+</li>
+<li><a id="orgd286415"></a>维度（实体）<br />
+<div class="outline-text-5" id="text-1-2-5-3">
+<ul class="org-ul">
+<li>例子：
+<ul class="org-ul">
+<li>“地理位置”维度的属性有“纬度”，“经度”，“城市名称”</li>
+<li>买家维度的属性有：支付金额，买家姓名、手机号</li>
+</ul></li>
+<li>观察和分析事物或指标的不同角度，一种分类方式
+<ul class="org-ul">
+<li>对于 指标=销售额，角度有：时间周期，产品类型，地域，销售主体</li>
+</ul></li>
+<li>实际存在，且不因事件而动的实体</li>
+<li>杂项维度：使用较多却无法归属到相应的维度中的属性</li>
+<li>维度在事实表中用于描述业务过程所处的环境信息</li>
+</ul>
+</div>
+</li>
+<li><a id="orga0c1481"></a>指标（维度&amp;过程的度量）<br />
+<div class="outline-text-5" id="text-1-2-5-4">
+<ul class="org-ul">
+<li>基础（原子）指标=业务过程+度量
+<ul class="org-ul">
+<li>一般为统计数值，如交易笔数、交易金额、在线用户数</li>
+</ul></li>
+<li>衍生指标=原子指标+业务限定+统计周期+统计粒度
+<ul class="org-ul">
+<li>添加统计维度后的指标，如平均购买金额、生产计划完成值，累计问题数、同比、环比、占比</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orge80b3f5"></a>统计粒度<br />
+<div class="outline-text-5" id="text-1-2-5-5">
+<p>
+维度的组合，指明统计范围，如某卖家某省份的某指标，粒度=卖家+省份
+</p>
+</div>
+</li>
+<li><a id="orgeb5e66b"></a>数据之间关系<br />
+<div class="outline-text-5" id="text-1-2-5-6">
+<ul class="org-ul">
+<li>维度和度量可以相互转换</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org14ec4f0" class="outline-4">
+<h4 id="org14ec4f0"><span class="section-number-4">1.2.6</span> 元模型</h4>
+<div class="outline-text-4" id="text-1-2-6">
+<ul class="org-ul">
+<li>本质：<a href="https://www.jianshu.com/p/3ff6328c0bf0">沟通工具</a>，IT空间的问题描述语言</li>
+<li><a href="https://www.jianshu.com/p/9ee6cca9462d">元模型和流程是方法论的两个方面</a></li>
+<li>元数据</li>
+<li>语言：语言的出现极大地提升了沟通效率</li>
+<li>概念：感性认识的理性抽象</li>
+<li>共识：概念的接受度确定了共识的范围</li>
+<li>从IT世界的问题空间中，找到现实世界对应的问题，并在解决方案空间中找到技术解决路径。</li>
 </ul>
 </div>
 </div>
+<div id="outline-container-org2054cce" class="outline-4">
+<h4 id="org2054cce"><span class="section-number-4">1.2.7</span> 数据之间的关系</h4>
+<div class="outline-text-4" id="text-1-2-7">
+
+<div class="figure">
+<p><img src="../assets/note-img/数据关系.png" alt="数据关系.png" />
+</p>
+<p><span class="figure-number">Figure 2: </span>数据关系</p>
 </div>
-<div id="outline-container-org6faa095" class="outline-3">
-<h3 id="org6faa095"><span class="section-number-3">1.3</span> 数据管理框架</h3>
+<ul class="org-ul">
+<li>所有元数据 &rarr; 进行整体规划、抽象描述、进而设计出 &rarr; 元模型</li>
+<li>根据元模型采集元数据信息：标题、作者、出版商</li>
+<li>if书本=数据：
+<ul class="org-ul">
+<li>元数据=存储着关于数据的数据信息=(标题<sub>i</sub>、作者姓名<sub>i</sub>、出版商<sub>i</sub>、版权细则<sub>i</sub>、目录<sub>i</sub>、页码<sub>i</sub>)</li>
+<li>(标题<sub>i</sub>、作者姓名<sub>i</sub>、出版商<sub>i</sub>、版权细则<sub>i</sub>、目录<sub>i</sub>、页码<sub>i</sub>) 抽象化&rarr; 元模型=(标题、作者姓名、出版商、版权细则、目录、页码)</li>
+</ul></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org149b718"></a>元数据&amp;主数据<br />
+<div class="outline-text-5" id="text-1-2-7-1">
+<ul class="org-ul">
+<li>元数据是目录，主数据是正文，元数据用于辅助找到主数据</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org19dc8fe" class="outline-3">
+<h3 id="org19dc8fe"><span class="section-number-3">1.3</span> 数据管理</h3>
 <div class="outline-text-3" id="text-1-3">
 </div>
-<div id="outline-container-orgd362115" class="outline-4">
-<h4 id="orgd362115"><span class="section-number-4">1.3.1</span> DCMM</h4>
+<div id="outline-container-org715faae" class="outline-4">
+<h4 id="org715faae"><span class="section-number-4">1.3.1</span> 元数据管理</h4>
 <div class="outline-text-4" id="text-1-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org22ebe85"></a>元模型管理<br />
+<div class="outline-text-5" id="text-1-3-1-1">
+<ul class="org-ul">
+<li>元模型维护：增删改发布</li>
+<li>元模型统计：分类、使用情况、变更追溯</li>
+<li>元模型生命周期管理</li>
+</ul>
+</div>
+</li>
+<li><a id="org2f73e07"></a>元数据管理<br />
+<div class="outline-text-5" id="text-1-3-1-2">
+<ul class="org-ul">
+<li>元数据的维护：增删改</li>
+<li>元数据关系的维护：建立，删除，跟踪</li>
+<li>元数据生命周期管理：管理、跟踪元数据的整个生命周期</li>
+</ul>
+</div>
+</li>
+<li><a id="org9634d90"></a>元数据分析<br />
+<div class="outline-text-5" id="text-1-3-1-3">
+<p>
+包括血缘分析（血统分析）、影响分析、实体关联分析、实体影响分析、主机拓扑分析、指标一致性分析等。
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org6faa095" class="outline-3">
+<h3 id="org6faa095"><span class="section-number-3">1.4</span> 数据管理框架</h3>
+<div class="outline-text-3" id="text-1-4">
+</div>
+<div id="outline-container-orgd362115" class="outline-4">
+<h4 id="orgd362115"><span class="section-number-4">1.4.1</span> DCMM</h4>
+<div class="outline-text-4" id="text-1-4-1">
 <ul class="org-ul">
 <li>Data management capability maturity assessment model 数据管理能力成熟度评估模型</li>
 <li>DCMM模型是一个整合了标准规范、管理方法论、评估模型等多方面内容的综合框架</li>
@@ -232,7 +413,7 @@ tags: job
 
 <ol class="org-ol">
 <li><a id="org1796f66"></a>数据架构<br />
-<div class="outline-text-5" id="text-1-3-1-1">
+<div class="outline-text-5" id="text-1-4-1-1">
 <ul class="org-ul">
 <li>定义数据需求、指导对数据资产的整合和控制、使数据投资与业务战略相匹配的一 套整体构件规范</li>
 <li>数据模型：定义与规范业务经营、管理和决策活动需要的组织数据需求</li>
@@ -245,8 +426,8 @@ tags: job
 </ol>
 </div>
 <div id="outline-container-org8954cd6" class="outline-4">
-<h4 id="org8954cd6"><span class="section-number-4">1.3.2</span> DAMA</h4>
-<div class="outline-text-4" id="text-1-3-2">
+<h4 id="org8954cd6"><span class="section-number-4">1.4.2</span> DAMA</h4>
+<div class="outline-text-4" id="text-1-4-2">
 <ul class="org-ul">
 <li>Data Management Association 国际数据管理协会</li>
 </ul>
@@ -254,7 +435,7 @@ tags: job
 <ol class="org-ol">
 <li><a id="org00bb893"></a>年会<br /></li>
 <li><a id="orgfb3f86d"></a>知识体系<br />
-<div class="outline-text-5" id="text-1-3-2-2">
+<div class="outline-text-5" id="text-1-4-2-2">
 <ul class="org-ul">
 <li>DAMA-BOK2.0</li>
 <li>《DAMA 数据管理字典》</li>
@@ -263,7 +444,7 @@ tags: job
 </div>
 </li>
 <li><a id="org9e450fb"></a>DMBOK认证考试<br />
-<div class="outline-text-5" id="text-1-3-2-3">
+<div class="outline-text-5" id="text-1-4-2-3">
 <ul class="org-ul">
 <li>中文：
 <ul class="org-ul">
@@ -277,8 +458,8 @@ tags: job
 </ol>
 </div>
 <div id="outline-container-org4368c37" class="outline-4">
-<h4 id="org4368c37"><span class="section-number-4">1.3.3</span> 战略一致性模型</h4>
-<div class="outline-text-4" id="text-1-3-3">
+<h4 id="org4368c37"><span class="section-number-4">1.4.3</span> 战略一致性模型</h4>
+<div class="outline-text-4" id="text-1-4-3">
 <p>
 战略一致性模型 抽象了各种数据管理方法的基本驱动因素。
 模型的中心是数据和信息之间的关系。
@@ -288,8 +469,8 @@ tags: job
 </div>
 </div>
 <div id="outline-container-org8a71f02" class="outline-4">
-<h4 id="org8a71f02"><span class="section-number-4">1.3.4</span> DAMA-DMBOK框架</h4>
-<div class="outline-text-4" id="text-1-3-4">
+<h4 id="org8a71f02"><span class="section-number-4">1.4.4</span> DAMA-DMBOK框架</h4>
+<div class="outline-text-4" id="text-1-4-4">
 <ul class="org-ul">
 <li>Data Management Body of Knowledge 数据管理知识体系指南</li>
 <li>数据控制：在数据管理和使用层面之上进行规划、监督和控制。</li>
@@ -307,12 +488,12 @@ tags: job
 </div>
 
 <div id="outline-container-orgce861f3" class="outline-4">
-<h4 id="orgce861f3"><span class="section-number-4">1.3.5</span> 434数据管理框架</h4>
-<div class="outline-text-4" id="text-1-3-5">
+<h4 id="orgce861f3"><span class="section-number-4">1.4.5</span> 434数据管理框架</h4>
+<div class="outline-text-4" id="text-1-4-5">
 </div>
 <ol class="org-ol">
-<li><a id="orgea61606"></a>数据治理<br />
-<div class="outline-text-5" id="text-1-3-5-1">
+<li><a id="org64acf7b"></a>数据治理<br />
+<div class="outline-text-5" id="text-1-4-5-1">
 <ul class="org-ul">
 <li>保障数据管理活动顺利开展的控制活动</li>
 <li>管理的管理</li>
@@ -320,8 +501,8 @@ tags: job
 </ul>
 </div>
 </li>
-<li><a id="org19dc8fe"></a>数据管理<br />
-<div class="outline-text-5" id="text-1-3-5-2">
+<li><a id="org70a8bf0"></a>数据管理<br />
+<div class="outline-text-5" id="text-1-4-5-2">
 <ul class="org-ul">
 <li>数据价值创造过程中三项数据管理活动
 <ul class="org-ul">
@@ -333,7 +514,7 @@ tags: job
 </div>
 </li>
 <li><a id="orgf7b1383"></a>基础数据管理<br />
-<div class="outline-text-5" id="text-1-3-5-3">
+<div class="outline-text-5" id="text-1-4-5-3">
 <ul class="org-ul">
 <li>贯穿数据价值创造过程的四项基础数据管理活动
 <ul class="org-ul">
@@ -348,13 +529,13 @@ tags: job
 </ol>
 </div>
 </div>
-<div id="outline-container-org4de5361" class="outline-3">
-<h3 id="org4de5361"><span class="section-number-3">1.4</span> 数据治理</h3>
-<div class="outline-text-3" id="text-1-4">
+<div id="outline-container-orgfcc8d0a" class="outline-3">
+<h3 id="orgfcc8d0a"><span class="section-number-3">1.5</span> 数据治理</h3>
+<div class="outline-text-3" id="text-1-5">
 </div>
 <div id="outline-container-org59ef6e2" class="outline-4">
-<h4 id="org59ef6e2"><span class="section-number-4">1.4.1</span> 定义</h4>
-<div class="outline-text-4" id="text-1-4-1">
+<h4 id="org59ef6e2"><span class="section-number-4">1.5.1</span> 定义</h4>
+<div class="outline-text-4" id="text-1-5-1">
 <ul class="org-ul">
 <li><a href="https://www.sohu.com/a/461817749_100097948">一文搞懂数据治理、数据管理、数据资产管理有什么不同<sub>控制</sub></a></li>
 <li>数据资产是对数据资源的量化和资产化</li>
@@ -367,13 +548,14 @@ tags: job
 </div>
 </div>
 <div id="outline-container-orgbc48858" class="outline-4">
-<h4 id="orgbc48858"><span class="section-number-4">1.4.2</span> 目标</h4>
-<div class="outline-text-4" id="text-1-4-2">
+<h4 id="orgbc48858"><span class="section-number-4">1.5.2</span> 目标</h4>
+<div class="outline-text-4" id="text-1-5-2">
 <ul class="org-ul">
 <li><a href="https://zhuanlan.zhihu.com/p/423105201">一文读懂数据治理和数据中台的关系 - 知乎</a></li>
 <li><a href="https://shimo.im/docs/hXqGHjTkC3JYPJpJ/read">数字化转型、中台、数据治理资料合集下载</a></li>
 <li><a href="https://zhuanlan.zhihu.com/p/377800786">数据管理、数据治理、数据中心、数据中台、数据湖、数据资产等的关系与区别？ - 知乎</a></li>
 <li>促进数据价值的释放</li>
+<li>让数据更好用</li>
 <li>数据治理建设和应用的前提
 <ul class="org-ul">
 <li>保密性</li>
@@ -395,7 +577,7 @@ tags: job
 </div>
 <ol class="org-ol">
 <li><a id="org66430a6"></a>具体做法<br />
-<div class="outline-text-5" id="text-1-4-2-1">
+<div class="outline-text-5" id="text-1-5-2-1">
 <ul class="org-ul">
 <li>消除数据孤岛，增大数据体量，避免重复开发，为后续数据互通与数据分析，提供数据原材料</li>
 <li>提高数据质量，推进数据标准化，为数据流动创造条件，给后续任务提供有用的数据</li>
@@ -407,9 +589,9 @@ tags: job
 </ol>
 </div>
 
-<div id="outline-container-org9e393f6" class="outline-4">
-<h4 id="org9e393f6"><span class="section-number-4">1.4.3</span> 步骤</h4>
-<div class="outline-text-4" id="text-1-4-3">
+<div id="outline-container-org89f71be" class="outline-4">
+<h4 id="org89f71be"><span class="section-number-4">1.5.3</span> 步骤</h4>
+<div class="outline-text-4" id="text-1-5-3">
 <ul class="org-ul">
 <li>找症状，明确目标
 <ul class="org-ul">
@@ -447,8 +629,8 @@ tags: job
 </ul>
 </div>
 </div>
-<div id="outline-container-orgdc31b27" class="outline-4">
-<h4 id="orgdc31b27"><span class="section-number-4">2.1.2</span> 政务大数据中心资源池建设</h4>
+<div id="outline-container-orgd020760" class="outline-4">
+<h4 id="orgd020760"><span class="section-number-4">2.1.2</span> 政务大数据中心资源池建设</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <ul class="org-ul">
 <li><a href="https://blog.csdn.net/hgstclyh/article/details/115658615">(18条消息) 政务数据里的基础库、主题库、专题库<sub>Leo笑的博客</sub>-CSDN博客<sub>主题库</sub></a></li>
@@ -541,8 +723,8 @@ tags: job
 <h3 id="orgadf8335"><span class="section-number-3">2.2</span> 工作内容</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-org7a66964" class="outline-4">
-<h4 id="org7a66964"><span class="section-number-4">2.2.1</span> 政务大数据中心资源池建设</h4>
+<div id="outline-container-org16c4a2c" class="outline-4">
+<h4 id="org16c4a2c"><span class="section-number-4">2.2.1</span> 政务大数据中心资源池建设</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <ul class="org-ul">
 <li>数据调研</li>
@@ -655,7 +837,7 @@ tags: job
 <div class="outline-text-4" id="text-2-2-4">
 </div>
 <ol class="org-ol">
-<li><a id="org153dbae"></a>元数据管理<br /></li>
+<li><a id="org6b20feb"></a>元数据管理<br /></li>
 <li><a id="orge4e374c"></a>数据元管理<br /></li>
 <li><a id="orgda7bfab"></a>数据质量管理<br /></li>
 <li><a id="org8d8d4f8"></a>数据架构设计<br /></li>
@@ -780,7 +962,7 @@ tags: job
 </li>
 <li><a id="orgbe6773e"></a>数据分析<br /></li>
 <li><a id="org2589fab"></a>数据挖掘<br /></li>
-<li><a id="org328bb51"></a>元数据管理<br />
+<li><a id="org7246ace"></a>元数据管理<br />
 <div class="outline-text-6" id="text-3-1-2-6-4">
 <ul class="org-ul">
 <li>元数据：解释性数据，用于记录数据仓库中模型的定义，各层级间的映射关系；监控数据仓库的数据状态及ETL的任务运行状态</li>
@@ -945,7 +1127,7 @@ tags: job
 </ul>
 </div>
 <ol class="org-ol">
-<li><a id="orgfa45c93"></a>概念<br />
+<li><a id="orgbe5f6f4"></a>概念<br />
 <div class="outline-text-6" id="text-3-1-4-2-1">
 <ul class="org-ul">
 <li>数据立方体</li>
@@ -1213,8 +1395,8 @@ tags: job
 <h3 id="orge4eb3c0"><span class="section-number-3">3.2</span> 数据库</h3>
 <div class="outline-text-3" id="text-3-2">
 </div>
-<div id="outline-container-orgba735f0" class="outline-4">
-<h4 id="orgba735f0"><span class="section-number-4">3.2.1</span> 范式</h4>
+<div id="outline-container-org9e7194d" class="outline-4">
+<h4 id="org9e7194d"><span class="section-number-4">3.2.1</span> 范式</h4>
 <div class="outline-text-4" id="text-3-2-1">
 <ul class="org-ul">
 <li><a href="https://blog.csdn.net/Dove_Knowledge/article/details/71434960">(18条消息) 数据库-第一范式、第二范式、第三范式、BC范式、第四范式简析<sub>Yes</sub><sub>JiangShuai的博客</sub>-CSDN博客<sub>bc范式</sub></a></li>
@@ -1234,7 +1416,7 @@ tags: job
 <div class="outline-text-4" id="text-3-2-2">
 </div>
 <ol class="org-ol">
-<li><a id="org5a578ea"></a>步骤<br />
+<li><a id="orgb98b12b"></a>步骤<br />
 <div class="outline-text-5" id="text-3-2-2-1">
 <ul class="org-ul">
 <li><a href="https://blog.csdn.net/Eason_oracle/article/details/52667628">数据库建模三步骤：概念模型-&gt;逻辑模型-&gt;物理模型</a></li>
@@ -1260,7 +1442,7 @@ tags: job
 <div class="outline-text-4" id="text-3-2-3">
 </div>
 <ol class="org-ol">
-<li><a id="org3f2a6b7"></a>范式<br />
+<li><a id="orgccfaabf"></a>范式<br />
 <div class="outline-text-5" id="text-3-2-3-1">
 <ul class="org-ul">
 <li><a href="https://blog.csdn.net/Dream_angel_Z/article/details/45175621">(18条消息) 数据库（第一范式，第二范式，第三范式）<sub>拾毅者的博客</sub>-CSDN博客<sub>范式</sub></a></li>

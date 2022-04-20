@@ -128,10 +128,23 @@ tags: emacs
 <li><a href="http://www.fidding.me/article/18">emacs yasnippet自定义模版配置与使用-洪加煌博客</a></li>
 <li><a href="http://www.manongjc.com/article/113438.html">Emacs yasnippet - 码农教程</a></li>
 <li><a href="https://www.codeleading.com/article/63523514631/">Emacs安装配置yasnippet - 代码先锋网</a></li>
+<li>路径 <code>.emacs.d/snippets/org-mode/yaml-font-matter</code></li>
 </ul>
 </div>
+<div id="outline-container-org0ab95f9" class="outline-4">
+<h4 id="org0ab95f9"><span class="section-number-4">5.1.1</span> 安装</h4>
 </div>
-
+<div id="outline-container-org45631e9" class="outline-4">
+<h4 id="org45631e9"><span class="section-number-4">5.1.2</span> 配置</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<pre class="example">
+;; 文件自动生成模板
+(require 'yasnippet)
+(yas-global-mode 1)
+</pre>
+</div>
+</div>
+</div>
 <div id="outline-container-orgedc17ad" class="outline-3">
 <h3 id="orgedc17ad"><span class="section-number-3">5.2</span> org-jekyll-mode</h3>
 <div class="outline-text-3" id="text-5-2">
@@ -155,6 +168,7 @@ tags: emacs
 <li><a href="https://blog.arvinx.com/2017/modify-the-theme/">博客建站记录（3）| 主题配置与修改（上） - 空谷札记 | ArvinX's Blog</a></li>
 <li><a href="https://jsuper.github.io/emacs/using-org-mode-to-write-jekyll-post.html">使用org-mode撰写jekyll博客</a></li>
 <li><a href="https://victor72.github.io/blog/2016/06/16/with-org-mode-setup-up-personal-blog/">使用 Emacs Org-Mode 写博客 - 日知录</a></li>
+<li>插入图片：<a href="https://blog.yicheng.ren/posts/2020/05/11/org-mode.html">Jekyll 下使用 Org-mode-Yichengr</a></li>
 </ul>
 </div>
 </div>

@@ -6,8 +6,8 @@ author: Nathan
 tags: emacs
 ---
 
-<div id="outline-container-orge23818c" class="outline-2">
-<h2 id="orge23818c"><span class="section-number-2">1</span> 自动生成文字</h2>
+<div id="outline-container-org82f3176" class="outline-2">
+<h2 id="org82f3176"><span class="section-number-2">1</span> 自动生成文字</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li><a href="http://www.fidding.me/article/18">emacs yasnippet自定义模版配置与使用-洪加煌博客</a></li>
@@ -18,8 +18,8 @@ tags: emacs
 </div>
 
 
-<div id="outline-container-org640ccca" class="outline-2">
-<h2 id="org640ccca"><span class="section-number-2">2</span> org-jekyll-mode</h2>
+<div id="outline-container-org5c0ab39" class="outline-2">
+<h2 id="org5c0ab39"><span class="section-number-2">2</span> org-jekyll-mode</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="https://github.com/jsuper/org-jekyll-mode">jsuper/org-jekyll-mode: Emacs extensions for writing Jekyll post with org-mode</a></li>

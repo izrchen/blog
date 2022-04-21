@@ -168,7 +168,13 @@ tags: emacs
 <li><a href="https://blog.arvinx.com/2017/modify-the-theme/">博客建站记录（3）| 主题配置与修改（上） - 空谷札记 | ArvinX's Blog</a></li>
 <li><a href="https://jsuper.github.io/emacs/using-org-mode-to-write-jekyll-post.html">使用org-mode撰写jekyll博客</a></li>
 <li><a href="https://victor72.github.io/blog/2016/06/16/with-org-mode-setup-up-personal-blog/">使用 Emacs Org-Mode 写博客 - 日知录</a></li>
-<li>插入图片：<a href="https://blog.yicheng.ren/posts/2020/05/11/org-mode.html">Jekyll 下使用 Org-mode-Yichengr</a></li>
+<li>插入图片
+<ul class="org-ul">
+<li><a href="https://blog.yicheng.ren/posts/2020/05/11/org-mode.html">Jekyll 下使用 Org-mode-Yichengr</a></li>
+<li><a href="https://www.cnblogs.com/yangwen0228/p/6287455.html">使用Emacs中的org-mode写cnblogs之图片插入 - yangwen0228 - 博客园</a></li>
+<li><a href="https://blog.csdn.net/qq_30684181/article/details/93681734">(18条消息) 解决github pages和github .md文件图片不显示<sub>一世一生命的博客</sub>-CSDN博客</a></li>
+<li><a href="http://rjgc.cn/2019/06/28/Jekyll%E5%92%8CGithub-Pages%E6%90%AD%E5%BB%BA%E7%9A%84%E7%BD%91%E7%AB%99%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA/">Jekyll和Github Pages搭建的网站图片不显示 - Don 博客 | Don Blog</a></li>
+</ul></li>
 </ul>
 </div>
 </div>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>资料分析</title>
+<meta name="author" content="(Nathan Chan)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">资料分析</h1><h2 class="author">Nathan Chan</h2><h2 class="date">2022年4月29日</h2><p class="date">Created: 2022-04-29 Fri 17:35</p>
+</section>
+
+<section>
+<section id="slide-org67fdbce">
+<h2 id="org67fdbce">考情</h2>
+<ul>
+<li>题量：2篇*5道=10道</li>
+<li>目标：13分钟，&gt;8道</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgb536eea">
+<h2 id="orgb536eea">速算技巧</h2>
+<ul>
+<li>灵活调整计算精度</li>
+<li>列式子</li>
+<li>观察选项
+<ul>
+<li>量级相同：看差距大小</li>
+<li>量级不同：需要带上小数点运算</li>
+
+</ul></li>
+<li>截位运算</li>
+
+</ul>
+</section>
+<section id="slide-org7abd2d4">
+<h3 id="org7abd2d4">截位直除</h3>
+<p>
+针对除法运算
+</p>
+</section>
+<section id="slide-org2276add">
+<h4 id="org2276add">截几位</h4>
+<ul>
+<li>2~3位</li>
+<li>看选项：
+<ul>
+<li>选项精度高：截3位</li>
+<li>选项精度低：截2位</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org7bb9923">
+<h4 id="org7bb9923">截谁</h4>
+<ul>
+<li>一步除法：只动分母</li>
+<li>多步除法：分子分母</li>
+
+</ul>
+</section>
+<section id="slide-orgcbfafdf">
+<h3 id="orgcbfafdf">一般技巧</h3>
+<ul>
+<li>\(x\times 1.5=x+0.5x\)</li>
+<li>错位相加：\(x\div 0.9 = x\times 1.1 = x+0.1x\)</li>
+<li>错位相减：\(x\div 1.1 = x\times 0.9 = x-0.1x\)</li>
+<li>乾坤大挪移：\(6019\times 12%=60 \times 12=720\)</li>
+
+</ul>
+</section>
+<section id="slide-org5128200">
+<h3 id="org5128200">比较型（分数）</h3>
+<ul>
+<li>一大一小直接看：分子大分母小，整个分数大</li>
+<li>同大同小比速度
+<ul>
+<li>横着看倍数：看谁跑得快</li>
+<li>竖着直接除</li>
+<li>化同法：将待比较分数化成同一量级</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org81b6c53">
+<h4 id="org81b6c53">四个分数</h4>
+<ul>
+<li>一大一小先排除</li>
+<li>同大同小再筛选</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgf5f1eff">
+<h2 id="orgf5f1eff">基本术语</h2>
+<ul>
+<li>基期量：对比参照的量，一般为过去的量</li>
+<li>现期量：当前的量</li>
+<li>增长量：数+单位，可正可负</li>
+<li>增长率：\(r = \frac{现期量}{基期量}\)</li>
+<li>同比：去年同期相比</li>
+<li>环比：与上一个统计周期（最小的）相比（月环比，季环比）
+<ul>
+<li>跨月，跨年</li>
+
+</ul></li>
+<li>贸易顺差：出口&gt;进口，顺差=出口-进口</li>
+<li>贸易逆差：进口&gt;出口，逆差=进口-出口</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orga604c84">
+<h2 id="orga604c84">基期量</h2>
+<div class="outline-text-2" id="text-orga604c84">
+</div>
+</section>
+<section id="slide-org84ecb0b">
+<h3 id="org84ecb0b">求解步骤</h3>
+<ul>
+<li>识别</li>
+<li>公式
+<ul>
+<li>基期量=现期量-增长量：尾数法</li>
+<li>\(基期量=\frac{现期量}{1+r}\)</li>
+
+</ul></li>
+<li>计算
+<ul>
+<li>截位直除（通用）</li>
+<li>化除为乘（\(|r|\leq 5%\)）</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org188046c">
+<h4 id="org188046c">化除为乘</h4>
+<ul>
+<li>\(\frac{A}{1-r} \approx A \times (1+r)\)</li>
+<li>\(\frac{A}{1+r} \approx A \times (1-r)\)</li>
+
+</ul>
+</section>
+<section id="slide-org8915b9e">
+<h3 id="org8915b9e">题型</h3>
+<div class="outline-text-3" id="text-org8915b9e">
+</div>
+</section>
+<section id="slide-org2fdf959">
+<h4 id="org2fdf959">基期和差</h4>
+<ul>
+<li>顺差和逆差先排除</li>
+<li>顺藤找陷阱，再避开</li>
+<li>实在避不开，则截位直除</li>
+
+</ul>
+</section>
+<section id="slide-org0db221e">
+<h4 id="org0db221e">基期比较</h4>
+<p>
+找出首尾，再确定中间大小
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgc5f8a6c">
+<h2 id="orgc5f8a6c">现期量</h2>
+<ul>
+<li>识别</li>
+<li>公式
+<ul>
+<li>现期量=基期量+增长量</li>
+<li>\(现期量=基期量\times(1+r)\)</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-orgaaff83d">
+<h3 id="orgaaff83d">现期追赶</h3>
+<ul>
+<li>识别：求未来n年后的量</li>
+<li>公式
+<ul>
+<li>给增长量：\(现期量=基期量+n\times 增长量\)</li>
+<li>给增长率：\(现期量=基期量\times (1+r)^{n}\)</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org28e2258">
+<h2 id="org28e2258">一般增长率</h2>
+</section>
+</section>
+<section>
+<section id="slide-org645fd6a">
+<h2 id="org645fd6a">增长量</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf2f52ae">
+<h2 id="orgf2f52ae">比重、平均数</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-orgd789dce">
+<h2 id="orgd789dce">倍数、特殊增长率</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+slideNumber:"c/t",
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>

@@ -1,8 +1,9 @@
 ---
  author:Nathan 
- tag:job 
+ tags:job 
  ---
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -32,13 +33,13 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">资料分析</h1><h2 class="author">Nathan Chan</h2><p class="date">Created: 2022-05-02 Mon 00:33</p>
+<section id="sec-title-slide"><h1 class="title">资料分析</h1><h2 class="author">Nathan Chan</h2><p class="date">Created: 2022-05-02 Mon 18:30</p>
 </section>
 
 
 <section>
-<section id="slide-orgb9a2bc1">
-<h2 id="orgb9a2bc1">考情</h2>
+<section id="slide-org3447134">
+<h2 id="org3447134">考情</h2>
 <ul>
 <li>题量：2篇*5道=10道</li>
 <li>目标：13分钟，&gt;8道</li>
@@ -47,8 +48,8 @@
 </section>
 </section>
 <section>
-<section id="slide-orgcfecbbe">
-<h2 id="orgcfecbbe">速算技巧</h2>
+<section id="slide-org2f2f985">
+<h2 id="org2f2f985">速算技巧</h2>
 <ul>
 <li>目的：灵活调整计算精度</li>
 <li>分类：
@@ -61,41 +62,47 @@
 
 </ul>
 </section>
-<section id="slide-org552be3e">
-<h3 id="org552be3e">截位直除</h3>
+<section id="slide-org0a22c77">
+<h3 id="org0a22c77">截位直除</h3>
 <ul>
 <li>列式子</li>
-<li>观察选项
+<li>看选项，定位数
 <ul>
-<li>量级相同：看差距大小</li>
-<li>量级不同：需要带上小数点运算</li>
+<li>量级相同：只看选项精度</li>
+<li>量级不同：运算还要带上小数点和单位</li>
 
 </ul></li>
 
 </ul>
 </section>
-<section id="slide-org7512137">
-<h4 id="org7512137">截几位？</h4>
+<section id="slide-org089b5af">
+<h4 id="org089b5af">截几位？</h4>
 <ul>
-<li>2~3位，看选项：
+<li>2~3位
 <ul>
 <li>选项精度高：截3位</li>
 <li>选项精度低：截2位</li>
 
 </ul></li>
+<li>精度
+<ul>
+<li>大：首位不同；首位相同，次位差大于首位</li>
+<li>小：首位相同，次位差小于首位</li>
+
+</ul></li>
 
 </ul>
 </section>
-<section id="slide-org635bc03">
-<h4 id="org635bc03">截谁？</h4>
+<section id="slide-org5c76f05">
+<h4 id="org5c76f05">截谁？</h4>
 <ul>
 <li>一步除法：只动分母 \(\frac{49.2}{1770}=\frac{49.2}{18}=2^{+}\)</li>
-<li>多步除法：分子分母</li>
+<li>多步除法：分子分母均动</li>
 
 </ul>
 </section>
-<section id="slide-org49d0a5e">
-<h3 id="org49d0a5e">分数大小比较</h3>
+<section id="slide-org33fae31">
+<h3 id="org33fae31">分数大小比较</h3>
 <ul>
 <li>一大一小直接看：分子大分母小 \(\to\) 整个分数大</li>
 <li>同大同小比速度
@@ -105,19 +112,30 @@
 <li>化同法：将待比较分数化成同一量级</li>
 
 </ul></li>
+<li>小数相近时，猜测分界点，代入划分选项</li>
 
 </ul>
 </section>
-<section id="slide-orgd6ef181">
-<h4 id="orgd6ef181">四个分数</h4>
+<section id="slide-org1b93bf7">
+<h4 id="org1b93bf7">四个分数形式的选项</h4>
 <ul>
+<li>方法一：
+<ol>
 <li>一大一小先排除</li>
 <li>同大同小再筛选</li>
 
+</ol></li>
+<li>方法二：
+<ol>
+<li>猜测选项的分界点</li>
+<li>分别代入选项，乘法运算划分选项</li>
+
+</ol></li>
+
 </ul>
 </section>
-<section id="slide-org4854911">
-<h3 id="org4854911">一般技巧</h3>
+<section id="slide-org150c991">
+<h3 id="org150c991">一般技巧</h3>
 <ul>
 <li>\(x\times 1.5=x+0.5x\)</li>
 <li>错位相加：\(x\div 0.9 = x\times 1.1 = x+0.1x\)</li>
@@ -130,15 +148,76 @@
 </section>
 </section>
 <section>
-<section id="slide-orgdb39887">
-<h2 id="orgdb39887">基本术语</h2>
+<section id="slide-org56c3f32">
+<h2 id="org56c3f32">基本术语</h2>
+<ul>
+<li>量</li>
+<li>率</li>
+<li>倍</li>
+<li>比</li>
+<li>其他</li>
+
+</ul>
+</section>
+<section id="slide-org015cab7">
+<h3 id="org015cab7">量</h3>
 <ul>
 <li>基期量：对比参照的量，一般为过去的量</li>
 <li>现期量：当前的量</li>
-<li>增长量：数+单位，可正可负</li>
-<li>增长率：\(r = \frac{现期量}{基期量}\)</li>
+<li>增长量：(+ or -)数+单位</li>
+<li>相差，变化幅度：比较绝对值大小</li>
+
+</ul>
+</section>
+<section id="slide-org5be4a82">
+<h3 id="org5be4a82">率</h3>
+<ul>
+<li>增长率：
+<ul>
+<li>\(增长率=增速=增幅=r\)</li>
+<li>\(r=\frac{现期量-基期量}{基期量}=\frac{A-B}{B}\)</li>
+<li>\(r=\frac{A}{B}-1 = 倍数-1\)</li>
+
+</ul></li>
+<li>降幅：吸收负号，一般为正数</li>
+
+</ul>
+</section>
+<section id="slide-org8737f92">
+<h3 id="org8737f92">倍</h3>
+<ul>
+<li>\(倍数=\frac{A}{B}=r+1\)</li>
+<li>高/多/增长n倍：\(r=\frac{A}{B}-1\)</li>
+<li>百分数：两个量的比例</li>
+<li>百分点：百分数的变化</li>
+<li>成数：整百分数</li>
+<li>翻番：
+<ul>
+<li>翻1番：原来的2倍</li>
+<li>翻2番：原来的4倍</li>
+<li>翻n番：原来的 \(2^{n}\) 倍</li>
+<li>100翻3番=800</li>
+<li>100到1600，翻了4番</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org38b8c16">
+<h3 id="org38b8c16">比</h3>
+<ul>
 <li>同比：去年同期相比</li>
-<li>环比：与上一个统计周期（最小的）相比（月环比，季环比）。跨月，跨年</li>
+<li>环比：与上一个（最小的）统计周期相比
+<ul>
+<li>有月环比，季环比，有跨月，跨年的情况</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org61e53ed">
+<h3 id="org61e53ed">其他</h3>
+<ul>
 <li>贸易顺差：出口&gt;进口，顺差=出口-进口</li>
 <li>贸易逆差：进口&gt;出口，逆差=进口-出口</li>
 <li>大月：1，3，5，7，8，10，12</li>
@@ -147,65 +226,50 @@
 </section>
 </section>
 <section>
-<section id="slide-org1b604f8">
-<h2 id="org1b604f8">基期量</h2>
-<div class="outline-text-2" id="text-org1b604f8">
-</div>
-</section>
-<section id="slide-org9f9d21b">
-<h3 id="org9f9d21b">求解步骤</h3>
+<section id="slide-org2290616">
+<h2 id="org2290616">基期量</h2>
 <ul>
 <li>识别：待求量的时间&lt;题干给出量的时间</li>
 <li>公式
 <ul>
-<li>基期量=现期量-增长量：尾数法</li>
+<li>基期量=现期量-增长量（尾数法）</li>
 <li>\(基期量=\frac{现期量}{1+r}\)</li>
-
-</ul></li>
-<li>计算
-<ul>
-<li>截位直除（通用）</li>
-<li>化除为乘（\(|r|\leq 5%\)）</li>
 
 </ul></li>
 
 </ul>
 </section>
-<section id="slide-orgf390cb6">
-<h4 id="orgf390cb6">化除为乘</h4>
+<section id="slide-orgbec2037">
+<h3 id="orgbec2037">速算</h3>
+<ul>
+<li>截位直除（通用）</li>
+<li>化除为乘（\(|r|\leq 5%\)）
 <ul>
 <li>\(\frac{A}{1-r} \approx A \times (1+r)\)</li>
 <li>\(\frac{A}{1+r} \approx A \times (1-r)\)</li>
 
-</ul>
-</section>
-<section id="slide-org5e3cfb3">
-<h3 id="org5e3cfb3">题型</h3>
-<ul>
-<li>基期和差</li>
-<li>基期比较</li>
+</ul></li>
 
 </ul>
 </section>
-<section id="slide-org4b7cba6">
-<h4 id="org4b7cba6">基期和差</h4>
+<section id="slide-org8f06cb6">
+<h3 id="org8f06cb6">题型</h3>
 <ul>
+<li>基期和差
+<ol>
 <li>顺差和逆差先排除</li>
 <li>顺藤找陷阱：要求基期逆差，题目给出现期逆差</li>
 <li>实在避不开，则截位直除</li>
 
+</ol></li>
+<li>基期比较：找出首尾元素，再确定中间元素的大小</li>
+
 </ul>
-</section>
-<section id="slide-orgaab3aad">
-<h4 id="orgaab3aad">基期比较</h4>
-<p>
-找出首尾元素，再确定中间元素的大小
-</p>
 </section>
 </section>
 <section>
-<section id="slide-org5cfb841">
-<h2 id="org5cfb841">现期量</h2>
+<section id="slide-org9731b2b">
+<h2 id="org9731b2b">现期量</h2>
 <ul>
 <li>识别：题干给出过去的量，待求量的时间为未来</li>
 <li>公式
@@ -217,8 +281,8 @@
 
 </ul>
 </section>
-<section id="slide-orgec17e0f">
-<h3 id="orgec17e0f">现期追赶</h3>
+<section id="slide-org39dc902">
+<h3 id="org39dc902">现期追赶</h3>
 <ul>
 <li>识别：求未来n年后的量</li>
 <li>公式
@@ -232,47 +296,8 @@
 </section>
 </section>
 <section>
-<section id="slide-orgfa38971">
-<h2 id="orgfa38971">基本术语</h2>
-<ul>
-<li>百分数：两个量的比例</li>
-<li>百分点：百分数的变化</li>
-
-</ul>
-</section>
-<section id="slide-orge63e5ca">
-<h3 id="orge63e5ca">增长率、降幅、变化幅度</h3>
-<ul>
-<li>\(增长率=增速=增幅=\frac{A-B}{B}\) ，比较带符号</li>
-<li>变化幅度：可正可负，比较绝对值</li>
-<li>降幅：必须为负</li>
-<li>\(倍数=\frac{A}{B}=增长率+1\)</li>
-<li>高/多/增长n倍=\(\frac{A}{B}-1\)</li>
-<li>相差：取绝对值</li>
-
-</ul>
-</section>
-<section id="slide-org48260eb">
-<h3 id="org48260eb">成数与翻番</h3>
-<ul>
-<li>成数</li>
-<li>翻番：
-<ul>
-<li>翻1番：原来的2倍</li>
-<li>翻2番：原来的4倍</li>
-<li>翻n番：原来的 \(2^{n}\) 倍</li>
-<li>100翻3番=800</li>
-<li>100到1600，翻了4番</li>
-
-</ul></li>
-
-</ul>
-
-</section>
-</section>
-<section>
-<section id="slide-org6ae238c">
-<h2 id="org6ae238c">一般增长率</h2>
+<section id="slide-org9b13043">
+<h2 id="org9b13043">一般增长率</h2>
 <ul>
 <li>考点
 <ul>
@@ -283,118 +308,135 @@
 
 </ul>
 </section>
-<section id="slide-org53dd549">
-<h3 id="org53dd549">计算类</h3>
-<div class="outline-text-3" id="text-org53dd549">
+<section id="slide-org3f5934e">
+<h3 id="org3f5934e">增长率计算</h3>
+<div class="outline-text-3" id="text-org3f5934e">
 </div>
 </section>
-<section id="slide-orgcf45d65">
-<h4 id="orgcf45d65">给百分数和百分点，求另一百分点</h4>
+<section id="slide-orga772cd3">
+<h4 id="orga772cd3">给百分数和百分点（关系），求另一百分数</h4>
 <ul>
 <li>2020年收入10万元，同比 <b>增长</b> 10%， <b>增速</b> 比去年 <b>提高</b> 5个百分点。2019年的增长率为：5%</li>
 <li>2020年收入10万元，同比 <b>增长</b> 10%， <b>增速</b> 比去年 <b>回落</b> 5个百分点。2019年的增长率为：15%</li>
 <li>2020年收入10万元，同比 <b>下降</b> 10%， <b>降幅</b> 比去年 <b>扩大</b> 5个百分点。2019年的增长率为：-5%</li>
-<li>2020年收入10万元，同比 <b>下降</b> 10%， <b>增速</b> 比去年 <b>收窄</b> 5个百分点。2019年的增长率为：-15%</li>
+<li>2020年收入10万元，同比 <b>下降</b> 10%， <b>降幅</b> 比去年 <b>收窄</b> 5个百分点。2019年的增长率为：-15%</li>
 
 </ul>
 </section>
-<section id="slide-org4565e78">
-<h4 id="org4565e78">给具体量</h4>
+<section id="slide-org4863787">
+<h4 id="org4863787">给数量，求增长率</h4>
 <ul>
-<li>识别：增长/下降+%；增长速度、增长幅度</li>
+<li>识别：增长/下降+%；增长速度、增幅</li>
 <li>公式： \(r=\frac{增长量}{基期量}=\frac{增长量}{现期-增长量}=\frac{现期-基期}{基期}=\frac{现期}{基期}-1\)</li>
 <li>速算：截位直除</li>
 
 </ul>
 </section>
-<section id="slide-org566991e">
-<h3 id="org566991e">增长率比较</h3>
+<section id="slide-orgc600b06">
+<h3 id="orgc600b06">增长率比较</h3>
 <ul>
 <li>识别：增长率最高/最低；增长最快/最慢</li>
-<li>方法： \(r=\frac{增长量}{基期量}=\frac{现期-基期}{基期}=\frac{现期}{基期}-1\)
+<li>\(r=\frac{现期-基期}{基期}=\frac{现期}{基期}-1\)</li>
+<li>方法：若 \(\frac{现期}{基期}\) 
 <ul>
-<li>当 \(\frac{现期}{基期}\) 倍数明显，用 \(\frac{现期}{基期}\) 比较</li>
-<li>当 \(\frac{现期}{基期}\) 倍数不明显，用 \(\frac{现期-基期}{基期}\) 比较</li>
+<li>倍数明显：比较 \(\frac{现期}{基期}\)</li>
+<li>倍数不明显：比较 \(\frac{现期-基期}{基期}\)</li>
 
 </ul></li>
 
 </ul>
 </section>
-<section id="slide-org374db18">
-<h3 id="org374db18">增长率理解</h3>
+<section id="slide-orgea7a886">
+<h3 id="orgea7a886">增长率理解</h3>
 <ul>
 <li>2015年上半年，生产总值10468.34亿元，同比增长8.6%，增幅比一季度提高0.1个百分点，比上年同期回落1.1个百分点
 <ul>
-<li>2015年一季度的增幅为8.5%</li>
-<li>2014年上半年的增幅为9.7%</li>
+<li>2015年上半年的增幅：8.6%</li>
+<li>2015年一季度的增幅：8.5%</li>
+<li>2014年上半年的增幅：9.7%</li>
 
 </ul></li>
 <li>全省规模以上轻工业累计完成增加值7482.76亿元，增长3.8%，增幅与上半年持平。
 <ul>
+<li>现期增幅：3.8%</li>
 <li>上半年增幅：3.8%</li>
 
 </ul></li>
 
 </ul>
 </section>
-<section id="slide-org374db18-split">
+<section id="slide-orgea7a886-split">
 
 <h3>增长率理解</h3>
 <ul>
-<li>2019年上半年同比增长4.8%，增幅与上月累计持平，比一季度回落1.7个百分点，比去年同期回落1.4个百分点。
+<li>2019年上半年同比增长4.8%，增幅与上月累计持平，比一季度回落1.7个百分点，比去年同期回落（增幅同比回落）1.4个百分点。
 <ul>
 <li>2019年1~5月增长率：4.8%</li>
 <li>2019年一季度增长率：6.5%</li>
 <li>2018年上半年增长率：6.2%</li>
-<li>2019年上半年增幅同比回落1.4个百分点</li>
 
 </ul></li>
 
 </ul>
 </section>
-<section id="slide-org1306c24">
-<h4 id="org1306c24">累计增长率</h4>
+<section id="slide-org90ecece">
+<h4 id="org90ecece">累计增长率</h4>
 <p>
 <i>2005年底前4年的资产累计增长率： \(\sqrt[3]{\frac{本期}{前4年}}-1\)</i>
 </p>
 <ul>
 <li>1至11月累计，全国一般公共预算支出207846亿元，同比增长0.7%，累计增幅实现转正。
 <ul>
-<li>累计增幅：1-11月的增长率=0.7%，比去年1至11月增长率大0.7个百分点</li>
+<li>累计增幅：1-11月的增长率=0.7%，比去年1至11月增长率大 <del>0.7个百分点</del> 未知</li>
 
 </ul></li>
 
 </ul>
 </section>
-<section id="slide-orgc055f30">
-<h4 id="orgc055f30">年均增长率与平均增长率</h4>
+<section id="slide-orged5ae51">
+<h4 id="orged5ae51">年均增长率与平均增长率</h4>
 <ul>
-<li>第一年增长率是10%,第二年是12%,第三年是14%,第四年16%</li>
-<li>四年的年平均增长率： \(\sqrt[4]{1.1\times 1.12 \times1.14 \times 1.16}-1 = 12.98\%\)</li>
-<li>增长率的平均值：\(\frac{0.1+0.12+0.14+0.16}{4}=13\%\)</li>
+<li>给：第一年增长率是10%，第二年是12%，第三年是14%，第四年16%</li>
+<li>求四年的年平均增长率： \(\sqrt[4]{1.1\times 1.12 \times1.14 \times 1.16}-1 = 12.98\%\)</li>
+<li>求增长率的平均值：\(\frac{0.1+0.12+0.14+0.16}{4}=13\%\)</li>
 
 </ul>
 </section>
 </section>
 <section>
-<section id="slide-org2a6d753">
-<h2 id="org2a6d753">增长量</h2>
-<div class="outline-text-2" id="text-org2a6d753">
-</div>
-</section>
-<section id="slide-orga7340aa">
-<h3 id="orga7340aa">计算</h3>
+<section id="slide-org7c29300">
+<h2 id="org7c29300">增长量</h2>
 <ul>
-<li>给现期和基期： \(增长量=现期-基期\)</li>
-<li>给基期和r： \(增长量=基期 \times r\)</li>
-<li>给现期和r： \(增长量=基期 \times r = \frac{现期}{1+r} \times r\) (百化分)</li>
+<li>计算</li>
+<li>比较</li>
 
 </ul>
 </section>
-<section id="slide-org8cd63ea">
-<h4 id="org8cd63ea">题型</h4>
+<section id="slide-orga7c7b70">
+<h3 id="orga7c7b70">计算</h3>
 <ul>
-<li>知道整体增长量，及部分增长量，求另一部分增长量</li>
+<li>给现期和基期： \(增长量=现期-基期\)</li>
+<li>给基期和r： \(增长量=基期 \times r\)</li>
+<li>给现期和r： \(增长量= \frac{现期}{1+r} \times r\) (百化分)</li>
+
+</ul>
+</section>
+<section id="slide-orgbfe2427">
+<h4 id="orgbfe2427">速算（已知现期和 \(r\) ）</h4>
+<p>
+\(增长量=\frac{现期}{1+r}\times r\)
+</p>
+<ol>
+<li>百化分： \(|r|=\frac{1}{n}\)</li>
+<li>\(增长量=\frac{现期}{n+1}\)</li>
+<li>\(减少量=\frac{现期}{n-1}\)</li>
+
+</ol>
+</section>
+<section id="slide-org1d8a8b3">
+<h4 id="org1d8a8b3">其他题型</h4>
+<ul>
+<li>给整体增长量及部分增长量，求另一部分增长量</li>
 <li>\(年均增长量=\frac{现期-基期}{年份差n}\)
 <ul>
 <li>例：2011年10万，2015年20万。 \(年均增长量=\frac{10}{4}=2.5\)</li>
@@ -409,76 +451,38 @@
 
 </ul>
 </section>
-<section id="slide-org44705e8">
-<h4 id="org44705e8">已知现期和 \(r\) （速算）</h4>
-<ul>
-<li>公式： \(增长量=\frac{现期}{1+r}\times r\)</li>
-<li>百化分： \(|r|=\frac{1}{n}\)</li>
-<li>\(增长量=\frac{现期}{n+1}\)</li>
-<li>\(减少量=\frac{现期}{n-1}\)</li>
-
-</ul>
+<section id="slide-org3c542a9">
+<h4 id="org3c542a9">百化分</h4>
+<a href="https://sm.ms/image/8urkZtpYzIm136S" target="_blank"><img src="https://s2.loli.net/2022/05/02/8urkZtpYzIm136S.png" ></a>
 </section>
-<section id="slide-org7d9c95f">
-<h4 id="org7d9c95f">百化分</h4>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">\(\frac{1}{2}=\)</th>
-<th scope="col" class="org-left">\(\frac{1}{4}\)</th>
-<th scope="col" class="org-left">\(\frac{1}{8}\)</th>
-<th scope="col" class="org-left">\(\frac{1}{16}\)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">\(\frac{1}{3}=\)</td>
-<td class="org-left">\(\frac{1}{6}\)</td>
-<td class="org-left">\(\frac{1}{12}\)</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="slide-org0975d3b">
-<h4 id="org0975d3b">百化分变形</h4>
+<section id="slide-org18f22b2">
+<h4 id="org18f22b2">百化分变形</h4>
 <ul>
 <li>放缩法
 <ul>
-<li>1.43%</li>
-<li>22%</li>
+<li>\(1.43\%=14.3\%\times \frac{1}{10}=\frac{1}{70}\)</li>
+<li>\(22\%=11\%\times 2=\frac{2}{9}\)</li>
 
 </ul></li>
 <li>取中法
 <ul>
-<li>15.4%</li>
-<li>28.7%</li>
+<li>\(14.3\%<15.4\%<16.7\% \leftrightarrow \frac{1}{7}<15.4\%<\frac{1}{6}\)</li>
+<li>\(\frac{1}{4}<28.7\%<\frac{1}{3}\)</li>
 
 </ul></li>
 <li>直除法
 <ul>
-<li>\(64\%=\frac{1}{100/64}=\frac{1}{1.5}\)</li>
+<li>\(64\%=\frac{1}{\frac{100}{64}}=\frac{1}{1.5}\)</li>
 
 </ul></li>
 
 </ul>
 </section>
-<section id="slide-org72d936b">
-<h3 id="org72d936b">比较</h3>
+<section id="slide-orgb1a4ce1">
+<h3 id="orgb1a4ce1">比较</h3>
 <ul>
 <li>识别：增长（下降）最多（最少）</li>
-<li>公式：
+<li>方法：
 <ul>
 <li>柱状图：看高度差</li>
 <li>\(增长量=\frac{现期}{1+r}\times r\)</li>
@@ -489,19 +493,19 @@
 
 </ul>
 </section>
-<section id="slide-org12fc376">
-<h4 id="org12fc376">已知现期、r</h4>
+<section id="slide-org025ce87">
+<h4 id="org025ce87">给现期量及 \(r\) ，求增长量最大者</h4>
 <ul>
-<li><b>Step1排除</b> 大大则大：现期量大， \(|增长率|\) 大，则增长（减少）量大
+<li>Step1 排除： <b>大大则大</b>  现期量大， \(|增长率|\) 大，则增长（减少）量大
 <ul>
 <li>我有200块，同比增长20%，小王有100块，同比增长10%。则我的增长量更大</li>
-<li>我有200块，同比下降20%，小王有100块，同比下降10%%。则我的减少量更大</li>
+<li>我有200块，同比下降20%，小王有100块，同比下降10%。则我的减少量更大</li>
 
 </ul></li>
-<li><b>Step2锁定</b> 否则百化分或看乘积
+<li>Step2 锁定： 百化分或看乘积
 <ul>
 <li>解法1：利用公式得出分数表示的增长量，比较后从中找出最大者</li>
-<li>解法2：假设比较多方的增长量早就注定，用现期量代替基期量，计算增长量，并比较大小</li>
+<li>解法2：假设比较多方的增长量早就注定，令现期代替基期，代入公式计算增长量，并比较大小</li>
 
 </ul></li>
 
@@ -509,8 +513,8 @@
 </section>
 </section>
 <section>
-<section id="slide-orgfa174c1">
-<h2 id="orgfa174c1">比重、平均数</h2>
+<section id="slide-org04355b8">
+<h2 id="org04355b8">比重、平均数</h2>
 <ul>
 <li>现期比重</li>
 <li>基期比重</li>
@@ -518,22 +522,17 @@
 
 </ul>
 </section>
-<section id="slide-orge028806">
-<h3 id="orge028806">现期比重</h3>
-<div class="outline-text-3" id="text-orge028806">
-</div>
-</section>
-<section id="slide-org84abb3b">
-<h4 id="org84abb3b">考察形式</h4>
+<section id="slide-org673bb71">
+<h3 id="org673bb71">现期比重</h3>
+<ul>
+<li>考察形式
 <ul>
 <li>已知部分和总体，求比重</li>
 <li>已知部分和比重，求总体</li>
 <li>已知总体和比重，求部分</li>
 
-</ul>
-</section>
-<section id="slide-org4b3af1c">
-<h4 id="org4b3af1c">其他表述形式</h4>
+</ul></li>
+<li>其他表述
 <ul>
 <li>\(利润率=\frac{利润}{收入}\)</li>
 <li>\(产销率=\frac{销量}{产量}\)</li>
@@ -543,13 +542,15 @@
 
 </ul></li>
 
+</ul></li>
+
 </ul>
 </section>
-<section id="slide-orge54af66">
-<h4 id="orge54af66">饼图问题</h4>
+<section id="slide-org01f30e4">
+<h4 id="org01f30e4">饼图问题</h4>
 <ul>
 <li>题型：题干给出比重，选项给出代表占比的饼图，从中找出符合题目要求的饼图</li>
-<li>问法：
+<li>方法：
 <ul>
 <li>看大小排除，比重越大</li>
 <li>主体间的倍数关系</li>
@@ -558,29 +559,29 @@
 
 </ul>
 </section>
-<section id="slide-org5ac84d7">
-<h3 id="org5ac84d7">基期比重</h3>
+<section id="slide-orgf968fb6">
+<h3 id="orgf968fb6">基期比重</h3>
 <ul>
-<li>识别：问题时间在材料之前，占，比重</li>
+<li>识别：问题时间在材料之前；占，比重</li>
 <li>题目：给出现期量(A,B)和增长率(a,b)，</li>
 <li>公式：\(\frac{\frac{A}{1+a}}{\frac{B}{b+1}}=\frac{A}{B}\times \frac{b+1}{a+1}\)</li>
 <li>速算
 <ul>
 <li>截位直除</li>
-<li>比较法：先算 \(\frac{A}{B}\) ，再看 \(\frac{1+b}{1+a}\) 与 \(1\) 大小关系</li>
+<li>比较法：先算 \(\frac{A}{B}\) ，再根据 \(\frac{1+b}{1+a}\) 与 \(1\) 的大小关系判断方向</li>
 
 </ul></li>
 
 </ul>
 </section>
-<section id="slide-org03bab4b">
-<h3 id="org03bab4b">两期比重-比较</h3>
+<section id="slide-orgaf4922c">
+<h3 id="orgaf4922c">两期比重变化方向</h3>
 <ul>
 <li>识别：两个时间+比重+升/降</li>
 <li>方法：看部分整体两个增速 \(a,b\) 的大小关系
 <ul>
-<li>\(a>b\) ，比重上升</li>
-<li>\(a<b\) ，比重下降</li>
+<li>\(a > b\) ，比重上升</li>
+<li>\(a < b\) ，比重下降</li>
 <li>\(a=b\) ，比重不变</li>
 <li>注：比较时需要带正负号</li>
 
@@ -588,11 +589,11 @@
 
 </ul>
 </section>
-<section id="slide-org0393be9">
-<h3 id="org0393be9">两期比重-计算</h3>
+<section id="slide-orgda05e6e">
+<h3 id="orgda05e6e">两期比重变化量</h3>
 <ul>
 <li>识别：两个时间+比重+升/降多少个百分点</li>
-<li>公式： \(现期比重-基期比重=\frac{A}{B}-\frac{A}{B}\times \frac{1+b}{1+a}\)</li>
+<li>公式： \(现期比重-基期比重=\frac{A}{B}\times \frac{a-b}{1+a}\)</li>
 <li>步骤：
 <ul>
 <li>看方向</li>
@@ -604,45 +605,45 @@
 
 </ul>
 </section>
-<section id="slide-orgd3b550d">
-<h3 id="orgd3b550d">平均数</h3>
+<section id="slide-org268bc27">
+<h3 id="org268bc27">平均数</h3>
 <a href="https://sm.ms/image/pKFaPLVHEf9uCGX" target="_blank"><img src="https://s2.loli.net/2022/05/01/pKFaPLVHEf9uCGX.png" ></a>
 </section>
-<section id="slide-org24474c7">
-<h3 id="org24474c7">现期平均数</h3>
+<section id="slide-orgfd4621d">
+<h3 id="orgfd4621d">现期平均数</h3>
 <ul>
-<li>识别：问题时间与材料时间一致</li>
+<li>识别：问题时间与材料时间一致，均、每、单位</li>
 <li>公式： \(平均数=\frac{总数}{个数}\)</li>
 <li>速算：截位直除</li>
 <li>坑
 <ul>
-<li>给：年使用量，求：平均每人每月，需要除人数后再除12个月</li>
+<li>给： <b>年</b> 使用量，求：平均每人每 <b>月</b> ，需要除人数后再除12个月</li>
 
 </ul></li>
 
 </ul>
 </section>
-<section id="slide-org35962ac">
-<h4 id="org35962ac">削峰填谷</h4>
+<section id="slide-org0993e56">
+<h4 id="org0993e56">削峰填谷</h4>
 <ul>
-<li>Step0：先截位，看选项差距到哪一位</li>
-<li>Step1：划线，定基准</li>
-<li>Step2：找峰找谷</li>
-<li>Step3：计算，用峰填谷，所求=峰谷的平均值+基准</li>
+<li>Step0：根据选项差异（位次），对现期各部分数量进行截位</li>
+<li>Step1：定基准并划线</li>
+<li>Step2：算峰找谷</li>
+<li>Step3：现期均值=峰谷均值+基准</li>
 
 </ul>
 </section>
-<section id="slide-org6b4e0fc">
-<h3 id="org6b4e0fc">基期平均</h3>
+<section id="slide-org9f90bc1">
+<h3 id="org9f90bc1">基期平均</h3>
 <ul>
-<li>识别：问题时间在材料之前。均、每、单位</li>
-<li>给现期量、增长量：找分子、分母基期量</li>
+<li>识别：问题时间在材料之前，均、每、单位</li>
+<li>给两指标现期、两指标的增长量： \(\frac{A-增_{A}}{B-增_{B}}\)</li>
 <li>给现期量、增长率： \(基期平均=\frac{A}{B}\times \frac{1+b}{1+a}\)</li>
 
 </ul>
 </section>
-<section id="slide-org6202787">
-<h3 id="org6202787">两期平均比较-升降</h3>
+<section id="slide-org3577863">
+<h3 id="org3577863">两期平均比较</h3>
 <ul>
 <li>识别：两个时间+平均数+升降</li>
 <li>公式： \(现期平均-基期平均=\frac{A}{B}-\frac{A}{B}\times \frac{1+b}{1+a}=\frac{A}{B}\times \frac{a-b}{1+a}\)</li>
@@ -656,8 +657,8 @@
 
 </ul>
 </section>
-<section id="slide-org1c98bac">
-<h3 id="org1c98bac">平均数增长率</h3>
+<section id="slide-org7d893fe">
+<h3 id="org7d893fe">平均数增长率</h3>
 <ul>
 <li>识别：平均数+增长+%</li>
 <li>公式： \(r=\frac{a-b}{1+b}\)</li>
@@ -673,31 +674,31 @@
 
 </ul>
 </section>
-<section id="slide-org308013b">
-<h3 id="org308013b">考点辨析</h3>
+<section id="slide-orge816123">
+<h3 id="orge816123">考点辨析</h3>
 <a href="https://sm.ms/image/jpb4qzeBmi6oKns" target="_blank"><img src="https://s2.loli.net/2022/05/01/jpb4qzeBmi6oKns.png" ></a>
 </section>
-<section id="slide-orgc93fb9d">
-<h3 id="orgc93fb9d">概念区分</h3>
-<div class="outline-text-3" id="text-orgc93fb9d">
+<section id="slide-org71f1b16">
+<h3 id="org71f1b16">概念区分</h3>
+<div class="outline-text-3" id="text-org71f1b16">
 </div>
 </section>
-<section id="slide-org6771116">
-<h4 id="org6771116">比重</h4>
+<section id="slide-org05b894f">
+<h4 id="org05b894f">比重</h4>
 <a href="https://sm.ms/image/fio23jXdURu76p4" target="_blank"><img src="https://s2.loli.net/2022/05/01/fio23jXdURu76p4.png" ></a>
 </section>
-<section id="slide-org36740ec">
-<h4 id="org36740ec">平均数</h4>
+<section id="slide-orgebd0d9b">
+<h4 id="orgebd0d9b">平均数</h4>
 <a href="https://sm.ms/image/sJYK8u3caBihIRj" target="_blank"><img src="https://s2.loli.net/2022/05/01/sJYK8u3caBihIRj.png" ></a>
 </section>
 </section>
 <section>
-<section id="slide-org808d5d8">
-<h2 id="org808d5d8">倍数</h2>
+<section id="slide-orgb369cef">
+<h2 id="orgb369cef">倍数</h2>
 <a href="https://sm.ms/image/fjspXle2dAVaPwx" target="_blank"><img src="https://s2.loli.net/2022/05/01/fjspXle2dAVaPwx.png" ></a>
 </section>
-<section id="slide-orgdbe47ea">
-<h3 id="orgdbe47ea">现期倍数</h3>
+<section id="slide-org341a873">
+<h3 id="org341a873">现期倍数</h3>
 <ul>
 <li>识别：问题时间和材料时间一致，A是B的多少倍</li>
 <li>公式： \(\frac{A}{B}\)</li>
@@ -705,8 +706,8 @@
 
 </ul>
 </section>
-<section id="slide-orgf67bcab">
-<h4 id="orgf67bcab">辨析：倍数三种问法</h4>
+<section id="slide-orgbbc300a">
+<h4 id="orgbbc300a">辨析：倍数三种问法</h4>
 <ul>
 <li>A是B的几倍： \(\frac{A}{B}\)</li>
 <li>A比B多/增长几倍(增长率)： \(\frac{A-B}{B}=\frac{A}{B}-1\)</li>
@@ -715,8 +716,8 @@
 
 </ul>
 </section>
-<section id="slide-org64c70ef">
-<h3 id="org64c70ef">基期倍数</h3>
+<section id="slide-org80ad11c">
+<h3 id="org80ad11c">基期倍数</h3>
 <ul>
 <li>识别：问题时间在材料之前，A是B的多少倍</li>
 <li>给增长率 \(a,b\)
@@ -741,12 +742,12 @@
 </section>
 </section>
 <section>
-<section id="slide-orgd0ad61d">
-<h2 id="orgd0ad61d">特殊增长率</h2>
+<section id="slide-org5edbfab">
+<h2 id="org5edbfab">特殊增长率</h2>
 <a href="https://sm.ms/image/4nJrfqIF6Np35Zw" target="_blank"><img src="https://s2.loli.net/2022/05/01/4nJrfqIF6Np35Zw.png" ></a>
 </section>
-<section id="slide-orgaa6a94e">
-<h3 id="orgaa6a94e">间隔增长率</h3>
+<section id="slide-org99f6381">
+<h3 id="org99f6381">间隔增长率</h3>
 <ul>
 <li>识别：中间隔一年，求增长率
 <ul>
@@ -758,22 +759,22 @@
 
 </ul>
 </section>
-<section id="slide-orgd07ea50">
-<h4 id="orgd07ea50">速算</h4>
+<section id="slide-org4f71e3f">
+<h4 id="org4f71e3f">速算</h4>
 <ul>
-<li>若 \(r_{1},r_{2}\) 绝对值均小于 \(10%\) 时， $r<sub>1</sub>&times; r<sub>2</sub>$可忽略</li>
+<li>若 \(r_{1},r_{2}\) 绝对值均小于 \(10%\) 时， \(r_{1}\times r_{2}\) 可忽略</li>
 <li>否则，乘积项中一个不变，另一个百化分，再直接乘</li>
 <li>重点：结合选项</li>
 
 </ul>
 </section>
-<section id="slide-orgef4d18a">
-<h3 id="orgef4d18a">间隔增长常考题型</h3>
+<section id="slide-org63bf329">
+<h3 id="org63bf329">间隔增长常考题型</h3>
 <ul>
 <li>间隔增长率 \(r_{间}=r_{1}+r_{2}+r_{1}\times r_{2}\)</li>
 <li>间隔倍数：间隔r+1</li>
 <li>间隔基期量： \(\frac{现期量}{1+间隔r}\)</li>
-<li>间隔增长量： $间隔|r|=\frac{1}{n}$，\(\frac{现期量}{n+1}\)
+<li>间隔增长量： \(间隔|r|=\frac{1}{n}\) ，\(\frac{现期量}{n+1}\)
 <ul>
 <li>\(\frac{现}{1+\frac{1}{n}}\times n\)</li>
 
@@ -787,8 +788,8 @@
 
 </ul>
 </section>
-<section id="slide-orgbecb654">
-<h3 id="orgbecb654">年均增长率</h3>
+<section id="slide-orgecbe3b7">
+<h3 id="orgecbe3b7">年均增长率</h3>
 <ul>
 <li>识别：年均增长+%、年均增长最快、年均增速排序</li>
 <li>公式： \((1+r)^{n}=\frac{现期}{基期}\)</li>
@@ -805,12 +806,12 @@
 
 </ul>
 </section>
-<section id="slide-orgc92b07b">
-<h3 id="orgc92b07b">混合增长率</h3>
+<section id="slide-org74de554">
+<h3 id="org74de554">混合增长率</h3>
 <a href="https://sm.ms/image/SQBFcUwq3MK58mW" target="_blank"><img src="https://s2.loli.net/2022/05/01/SQBFcUwq3MK58mW.png" ></a>
 </section>
-<section id="slide-orgbdaf5fb">
-<h4 id="orgbdaf5fb">判断口诀</h4>
+<section id="slide-org399cab6">
+<h4 id="org399cab6">判断口诀</h4>
 <ul>
 <li>混合后居中</li>
 <li>偏向量大的</li>

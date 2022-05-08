@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Nathan’s Blog</title>
+    <link>http://izrchen.github.io/</link>
+    <description>Recent content on Nathan’s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sun, 08 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://izrchen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emacs配置export引擎：pandoc</title>
+      <link>http://izrchen.github.io/post/%E4%B8%BAorg-mode%E9%85%8D%E7%BD%AE%E5%AF%BC%E5%87%BA%E5%BC%95%E6%93%8Epandoc/</link>
+      <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://izrchen.github.io/post/%E4%B8%BAorg-mode%E9%85%8D%E7%BD%AE%E5%AF%BC%E5%87%BA%E5%BC%95%E6%93%8Epandoc/</guid>
+      <description>动机  org-mode 自带ox-md.el导出工具，不能正确导出公式  WSL安装pandoc Emacs安装ox-pandoc Emacs Emacs配置 将pandoc加入org-mode export dispather 添加hook (with-eval-after-load &amp;#39;ox (require &amp;#39;ox-pandoc)) 去除原生的markdown导出 &amp;#39;(require &amp;#39;ox-md nil t) 将markdown加入pandoc  导出markdown格式文件的命令： C-x org-pandoc-export-to-markdown 编辑变量，添加导出快捷键： C-h v org-pandoc-menu-entry  </description>
+    </item>
+    
+    <item>
+      <title>org-mode与pandoc转各种格式的文件</title>
+      <link>http://izrchen.github.io/post/org-mode-and-pandoc-to-any/</link>
+      <pubDate>Sun, 08 May 2022 00:00:00 +0800</pubDate>
+      
+      <guid>http://izrchen.github.io/post/org-mode-and-pandoc-to-any/</guid>
+      <description>导出markdown 导出beamer 参考  emacsorphanage/ox-pandoc: Another org-mode exporter via pandoc.  </description>
+    </item>
+    
+    <item>
+      <title>org-mode导出适配hugo的markdown</title>
+      <link>http://izrchen.github.io/post/org-mode%E5%AF%BC%E5%87%BA%E9%80%82%E9%85%8Dhugo%E7%9A%84markdown/</link>
+      <pubDate>Sun, 08 May 2022 00:00:00 +0800</pubDate>
+      
+      <guid>http://izrchen.github.io/post/org-mode%E5%AF%BC%E5%87%BA%E9%80%82%E9%85%8Dhugo%E7%9A%84markdown/</guid>
+      <description>Hugo  Hugo中文文档  ox-hugo安装与配置 安装  打开包管理： M-x package-list-packages 搜索包： C-s ox-hugo 安装： install  配置 在 org-mode export dispatch 中加入快捷键：
+;; ox-hugo (with-eval-after-load &amp;#39;ox  (require &amp;#39;ox-hugo)) 使用  输入hugo所需要markdown头部 导出markdown到hugo博客目录  markdown所需头部及org-mode设置方式 配置及解释  草稿与否： #+TODO: TODO DONE  参考  Org meta-data to Hugo front-matter  </description>
+    </item>
+    
+    <item>
+      <title>生成固定标记的工具-yasnippet</title>
+      <link>http://izrchen.github.io/post/%E7%94%9F%E6%88%90%E5%9B%BA%E5%AE%9A%E6%A0%87%E8%AE%B0%E7%9A%84%E5%B7%A5%E5%85%B7-yasnippet/</link>
+      <pubDate>Sun, 08 May 2022 00:00:00 +0800</pubDate>
+      
+      <guid>http://izrchen.github.io/post/%E7%94%9F%E6%88%90%E5%9B%BA%E5%AE%9A%E6%A0%87%E8%AE%B0%E7%9A%84%E5%B7%A5%E5%85%B7-yasnippet/</guid>
+      <description>用途 yasnippet是自动补全插件，可以自动生成文档头部固定的或者其他标记语言
+方法 安装与配置 安装 配置 ;; 文件自动生成模板 (require &amp;#39;yasnippet) (yas-global-mode 1)  (yas-reload-all) (add-hook &amp;#39;prog-mode-hook #&amp;#39;yas-minor-mode) 使用  新增： M-x yas-new-snippet 编辑  name：snippet 文件的名字。当触发补全功能时，snippet会读取这个文件，将文件中的内容补充到buffer中。 key：输入快捷键，然后&amp;lt;tab&amp;gt; 即可补全。   保存 C-c C-c 修改 snippets/org-mote/文件名  </description>
+    </item>
+    
+    <item>
+      <title>Get Start</title>
+      <link>http://izrchen.github.io/post/get-start/</link>
+      <pubDate>Fri, 11 Mar 2022 21:44:12 +0800</pubDate>
+      
+      <guid>http://izrchen.github.io/post/get-start/</guid>
+      <description>图的拉普拉斯矩阵 </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://izrchen.github.io/post/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%95%B0%E5%AD%A6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://izrchen.github.io/post/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%95%B0%E5%AD%A6/</guid>
+      <description>:EXPORT_FILE_NAME: ox-hugo-tutorial :EXPORT_DESCRIPTION: Exporting to Hugo&amp;rsquo;s Blackfriday Markdown from Orgmode :EXPORT_HUGO_IMAGES: /img/org.pn :mathjax: true
++ mathjax: true +
+图的拉普拉斯矩阵 拉普拉斯算子 定义1： 多元函数 \(f(x_{1},x_{2},&amp;hellip;,x_{n})\) 的拉普拉斯算子是所有自变量的非混合二阶偏导数之和 \(\Delta f= \sum_{i=1}^{n} \frac{\partial^{2}f}{\partial x_{i}^{2}}\)
+特别的，二元函数 \(f(x,y)\) 的拉普拉斯算子为\ref{eq:2lp}
+\begin{equation} \Delta f=\frac{\partial^{2}f}{\partial x^{2}}+\frac{\partial^{2}f}{\partial y^{2}} \label{eq:2lp} \end{equation}
+导数定义：
+\begin{equation} f&amp;rsquo;(x)=\frac{f(x+\Delta x)-f(x)}{\Delta x} \label{eq:1p} \end{equation}
+二阶导数定义：
+\begin{equation} \begin{split} f&amp;rsquo;&amp;rsquo;(x) &amp;amp;=\frac{f&amp;rsquo;(x)-f&amp;rsquo;(x-\Delta x)}{\Delta x} \\\\ &amp;amp;=\frac{\frac{f(x+\Delta x)}{\Delta x}-\frac{f(x-\Delta x)}{\Delta x}}{\Delta x} \\\\ &amp;amp;=\frac{f(x+ \Delta x)+f(x-\Delta x)-2f(x)}{(\Delta x)^{2}} \label{eq:2p} \end{split} \end{equation}
+二元函数 \(f(x,y)\) 的拉普拉斯算子\ref{eq:2lp}的近似形式：</description>
+    </item>
+    
+  </channel>
+</rss>
